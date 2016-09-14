@@ -1,0 +1,30 @@
+/*--- TODO file of SD_Enc28j60_Combo_board ---*/
+/*--- made after first hw implementation   ---*/
+/*---              03.2016                 ---*/
+
+13.09.2016 - HW rev.03
+
+1. IC1 fix for L7805 and change place.
+1a.Make heatsink on PCB for IC1 (approax: 1cm x 1cm).
+2. Vin connector move to over SD card.
+3. CS pin of enc28j60 (pin10) re-route on pin8.
+4. Replace 74HCT125 with 74HC125 and power it with 3.3v of IC2.
+5. Inscribe "PCB produce: pcbway.com" and "Assembly: handwork"
+6. Change hw rev.02 -> 03.
+
+18.03.2016 - HW rev.02
+
++ 1.  Re-label of components.
++ 2.  Tethere RESET with pin 5 of ICSP connector and J9 (old mark) pins.
++ 3.  Increase space between J6 (old mark) and J8 (old mark) connectors.
++ 4.  Replace F1 with SMD option.
++ 5.  Cut leads between 3.3v regulator IC1 (input & output) for SD card and J9 (old mark) pins.
++ 6.  Replace and rotate 5v regulator (mc33269 -> L7805).
++ 7.  Replace RJ-45 connector (MAGJACK -> HanRun): resize it and rearrange pins.
++ 8.  Re-connect Green and Yellow LEDs of RJ-45 (HanRun) on LEDA and LEDB pins of enc28j60 respectively.
++ 9.  Find a new place for R11, connected to RBIAS pin (14) of enc28j60.
++ 10. Make TP1 (test point) for pin 3 (CLKOUT) of enc28j60 and don't connect it to GND.
++ 11. Re-route a lead to D10 pin on J6 (old mark): keep a more distance of the lead from pin D9.
++ 12. Add 5 LEDs for +5v, +3.3v(2pcs) and Tx, Rx ethernet indications.
++ 13. Change pad size for L1 (0805).
+
