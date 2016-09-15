@@ -11,7 +11,7 @@ with the single board
 
 ![Now] (../../wiki/IMG_20160915_115419.jpg)
 
-which deprived some hardware drawbacks.
+which is deprived of some hardware drawbacks.
 
 All details you can see on [Wiki] (../../wiki)
 
