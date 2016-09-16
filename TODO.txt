@@ -5,12 +5,14 @@
 13.09.2016 - HW rev.03
 
 1. IC1 fix for L7805 and change place.
-1a.Make heatsink on PCB for IC1 (approax: 1cm x 1cm).
-2. Vin connector move to over SD card.
-3. CS pin of enc28j60 (pin10) re-route on pin8.
-4. Replace 74HCT125 with 74HC125 and power it with 3.3v of IC2.
-5. Inscribe "PCB produce: pcbway.com" and "Assembly: handwork"
-6. Change hw rev.02 -> 03.
+2. Make heatsink on PCB for IC1 (approax: 1cm x 1cm).
+3. Vin connector move to over SD card.
+4. ICSP pin2 attach to +5v.
+5. CS pin of enc28j60 (pin10) re-route on pin8.
+6. Replace 74HCT125 with 74HC125 and power it with 3.3v of IC2.
+7. Inscribe "PCB produce: pcbway.com" and "Assembly: handwork"
+8. Change hw rev.02 -> 03.
+
 
 18.03.2016 - HW rev.02
 
