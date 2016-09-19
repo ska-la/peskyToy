@@ -15,4 +15,6 @@ which is deprived of some hardware drawbacks.
 
 All details you can see on [Wiki] (../../wiki)
 
+WARNING! IC1 of hw rev.02 must be fixed.
+
 ---
