@@ -13,13 +13,33 @@
 
 <!-- Attach icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<!--link rel="stylesheet" href="lib/font-awesome.min.css"-->
 
 <!-- Attach fonts -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo">
 
 <!--script src="http://www.w3schools.com/lib/w3data.js"></script-->
 <script src="lib/w3data.js"></script>
+
+<style>
+  .hwRev02 { display:none; }
+</style>
+
+<script>
+var curSlide = 0;
+
+function hw02SlideShow() {
+  var i;
+  var es = document.getElementsByClassName("hwRev02");
+  for ( i = 0; i < es.length; i++ ) {
+    es[i].style.display = "none";
+  }
+  if ( curSlide == es.length ) { curSlide = 0; }
+  es[curSlide].style.display = "block";
+  curSlide++;
+  setTimeout( hw02SlideShow, 9600 ); //--- timeout 9.6 secs ---
+}
+
+</script>
 
 <body>
 
@@ -37,6 +57,9 @@
   </div>
   <div w3-include-html="footer_large.html"></div>
 </div>
+
+      <script>w3IncludeHTML(); setTimeout( hw02SlideShow, 500 );</script>
+
 
 <!--------------- COMMON CONTENT (MEDIUM + SMALL) --------------->
 
@@ -70,6 +93,7 @@
 <!--------------------------- SCRIPTS --------------------------->
 
 <script>
+
 w3IncludeHTML();
 
 function openRightNav() {
@@ -78,7 +102,10 @@ function openRightNav() {
 function closeRightNav() {
   document.getElementById("idRightNav").style.display = "none";
 }
+
 </script>
+
+<!--------------------------- END SCRIPTS ----------------------->
 
 </body>
 </html>
