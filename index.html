@@ -20,9 +20,10 @@
 <!--script src="http://www.w3schools.com/lib/w3data.js"></script-->
 <script src="lib/w3data.js"></script>
 
-<!--style>
-  .hwRev02 { display:none; }
-</style-->
+<style>
+<!--  .hwRev02 { display:none; }-->
+  .myContent { display:none; }
+</style>
 
 <script>
 var curSlide = 0;
@@ -54,6 +55,7 @@ function hw02SlideShow() {
     <div class="w3-col">
       <div w3-include-html="intro_large.html"></div>
       <div w3-include-html="gallery.html"></div>
+      <div w3-include-html="video.html"></div>
     </div>
   </div>
   <div w3-include-html="footer_large.html"></div>
@@ -95,6 +97,31 @@ function openRightNav() {
 }
 function closeRightNav() {
   document.getElementById("idRightNav").style.display = "none";
+}
+
+function switchToIntro() {
+  var i;
+  var es = document.getElementsByClassName("myContent");
+  for ( i = 0; i < es.length; i++ ) {
+    es[i].style.display = "none";
+  }
+  document.getElementById("idIntroLarge").style.display = "block";
+}
+function switchToGallery() {
+  var i;
+  var es = document.getElementsByClassName("myContent");
+  for ( i = 0; i < es.length; i++ ) {
+    es[i].style.display = "none";
+  }
+  document.getElementById("idGalleryLarge").style.display = "block";
+}
+function switchToVideo() {
+  var i;
+  var es = document.getElementsByClassName("myContent");
+  for ( i = 0; i < es.length; i++ ) {
+    es[i].style.display = "none";
+  }
+  document.getElementById("idVideoLarge").style.display = "block";
 }
 
 </script>
