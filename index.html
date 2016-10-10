@@ -21,7 +21,7 @@
 <script src="lib/w3data.js"></script>
 
 <style>
-<!--  .hwRev02 { display:none; }-->
+/*  .hwRev02 { display:none; }*/
   .myContent { display:none; }
 </style>
 
@@ -99,29 +99,13 @@ function closeRightNav() {
   document.getElementById("idRightNav").style.display = "none";
 }
 
-function switchToIntro() {
+function switchTo(strMC) {
   var i;
   var es = document.getElementsByClassName("myContent");
   for ( i = 0; i < es.length; i++ ) {
     es[i].style.display = "none";
   }
-  document.getElementById("idIntroLarge").style.display = "block";
-}
-function switchToGallery() {
-  var i;
-  var es = document.getElementsByClassName("myContent");
-  for ( i = 0; i < es.length; i++ ) {
-    es[i].style.display = "none";
-  }
-  document.getElementById("idGalleryLarge").style.display = "block";
-}
-function switchToVideo() {
-  var i;
-  var es = document.getElementsByClassName("myContent");
-  for ( i = 0; i < es.length; i++ ) {
-    es[i].style.display = "none";
-  }
-  document.getElementById("idVideoLarge").style.display = "block";
+  document.getElementById(strMC).style.display = "block";
 }
 
 </script>
