@@ -36,7 +36,7 @@ function hw02SlideShow() {
   if ( curSlide == es.length ) { curSlide = 0; }
   es[curSlide].style.display = "block";
   curSlide++;
-  setTimeout( hw02SlideShow, 9600 ); //--- timeout 9.6 secs ---
+  setTimeout( hw02SlideShow, 5000 ); //--- timeout 9.6 secs ---
 }
 
 </script>
@@ -52,6 +52,7 @@ function hw02SlideShow() {
       <div w3-include-html="menu_large.html"></div>
     </div>
     <div class="w3-col">
+      <div w3-include-html="intro_large.html"></div>
       <div w3-include-html="gallery.html"></div>
     </div>
   </div>
@@ -63,18 +64,14 @@ function hw02SlideShow() {
 
 <!--------------- COMMON CONTENT (MEDIUM + SMALL) --------------->
 
-  <div w3-include-html="header_common.html"></div>
+  <!--div w3-include-html="header_common.html"></div-->
 
 <!------------------------- CONTENT MEDIUM ---------------------->
 
 <div class="w3-container w3-hide-large w3-hide-small w3-padding-0">
   <div w3-include-html="header_medium.html"></div>
   <div w3-include-html="menu_medium.html"></div>
-  <div class="w3-center">
-    <div class="w3-jumbo w3-text-blue">
-      <p class="w3-wide">Hello, world!</p>
-    </div>
-  </div>
+  <div w3-include-html="intro_medium.html"></div>
   <div w3-include-html="footer_medium.html"></div>
 </div>
 
@@ -83,10 +80,7 @@ function hw02SlideShow() {
 <div class="w3-container w3-hide-large w3-hide-medium w3-padding-0">
   <div w3-include-html="header_small.html"></div>
   <div w3-include-html="menu_small.html"></div>
-  <div id="idIntroMenu" class="w3-center w3-text-black w3-xlarge w3-hide-large w3-hide-medium">
-    <p>This is a combo board which provides an ethernet interface (based on enc28j60 chip) and a SD/TF-card full size socket. The board designated for early Arduino board with 5V power, like UNO, Mega1280/2560 and so on. But you can use it with any modern 3.3V powered development board which has Serial Peripheral Interface (SPI).
-    </p>
-  </div>
+  <div w3-include-html="intro_small.html"></div>
   <div w3-include-html="footer_small.html"></div>
 </div>
 
