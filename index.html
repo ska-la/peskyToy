@@ -31,13 +31,16 @@ var curSlide = 0;
 function hw02SlideShow() {
   var i;
   var es = document.getElementsByClassName("hwRev02");
+  var bgs = document.getElementsByClassName("idBadges");
   for ( i = 0; i < es.length; i++ ) {
     es[i].style.display = "none";
+    bgs[i].className = bgs[i].className.replace(" w3-white","");
   }
   if ( curSlide == es.length ) { curSlide = 0; }
   es[curSlide].style.display = "block";
+  bgs[curSlide].className += " w3-white";
   curSlide++;
-  setTimeout( hw02SlideShow, 5000 ); //--- timeout 9.6 secs ---
+  setTimeout( hw02SlideShow, 4000 ); //--- timeout 9.6 secs ---
 }
 
 </script>
@@ -61,7 +64,7 @@ function hw02SlideShow() {
   <div w3-include-html="footer_large.html"></div>
 </div>
 
-      <script>w3IncludeHTML(); setTimeout( hw02SlideShow, 2000 );</script>
+      <script>w3IncludeHTML(); setTimeout( hw02SlideShow, 1000 );</script>
 
 
 <!--------------- COMMON CONTENT (MEDIUM + SMALL) --------------->
@@ -97,6 +100,10 @@ function openRightNav() {
 }
 function closeRightNav() {
   document.getElementById("idRightNav").style.display = "none";
+}
+
+function showImg(i) {
+  curSlide = i - 1;
 }
 
 function switchTo(strMC) {
