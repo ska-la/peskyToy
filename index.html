@@ -43,6 +43,10 @@ function hw02SlideShow() {
   setTimeout( hw02SlideShow, 4000 ); //--- timeout 9.6 secs ---
 }
 
+function showImg(i) {
+  curSlide = i - 1;
+}
+
 </script>
 
 <body>
@@ -100,10 +104,6 @@ function openRightNav() {
 }
 function closeRightNav() {
   document.getElementById("idRightNav").style.display = "none";
-}
-
-function showImg(i) {
-  curSlide = i - 1;
 }
 
 function switchTo(strMC) {
