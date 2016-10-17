@@ -26,8 +26,38 @@
   .myContMedium { display:none; }
 </style>
 
+<script>
 
-<body>
+var curSlide = 0;
+
+function hw02SlideShow() {
+  var i;
+  var es = document.getElementsByClassName("hwRev02");
+  var es_m = document.getElementsByClassName("hwRev02m");
+  var bgs = document.getElementsByClassName("idBadges");
+  var bgs_m = document.getElementsByClassName("idM_Badges");
+  for ( i = 0; i < es.length; i++ ) {
+    es[i].style.display = "none";
+    es_m[i].style.display = "none";
+    bgs[i].className = bgs[i].className.replace(" w3-white","");
+    bgs_m[i].className = bgs_m[i].className.replace(" w3-white","");
+  }
+  if ( curSlide == es.length ) { curSlide = 0; }
+  es[curSlide].style.display = "block";
+  es_m[curSlide].style.display = "block";
+  bgs[curSlide].className += " w3-white";
+  bgs_m[curSlide].className += " w3-white";
+  curSlide++;
+  setTimeout( hw02SlideShow, 4000 ); //--- timeout 9.6 secs ---
+}
+
+function showImg(i) {
+  curSlide = i - 1;
+}
+
+</script>
+
+<body onload="setTimeout( hw02SlideShow, 1000 )">
 
 <!------------------------- CONTENT LARGE ---------------------->
 
@@ -72,11 +102,11 @@
 
 <script>
 
-var curSlide = 0;
+/*var curSlide = 0;*/
 
 w3IncludeHTML();
 
-function hw02SlideShow() {
+/*function hw02SlideShow() {
   var i;
   var es = document.getElementsByClassName("hwRev02");
   var es_m = document.getElementsByClassName("hwRev02m");
@@ -99,9 +129,7 @@ function hw02SlideShow() {
 
 function showImg(i) {
   curSlide = i - 1;
-}
-
-setTimeout( hw02SlideShow, 1000 );
+}*/
 
 function openRightNav() {
   document.getElementById("idRightNav").style.display = "block";
