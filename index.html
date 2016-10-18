@@ -57,7 +57,7 @@ function showImg(i) {
 
 </script>
 
-<body onload="setTimeout( hw02SlideShow, 1000 )">
+<body>
 
 <!------------------------- CONTENT LARGE ---------------------->
 
@@ -69,7 +69,30 @@ function showImg(i) {
     </div>
     <div class="w3-col">
       <div w3-include-html="intro_large.html"></div>
-      <div w3-include-html="gallery.html"></div>
+      <!--div w3-include-html="gallery.html"></div-->
+  <div id="idGalleryLarge" class="myContent w3-container w3-padding-0" style="margin-left:20%;display:none">
+    <div w3-include-html="bg_1_gallery.html"></div>
+    <div w3-include-html="background_2.html"></div>
+
+      <div class="w3-content w3-padding-xlarge w3-white" style="width:680px">
+          <!--div w3-include-html="images_hw02.html"></div-->
+<img class="hwRev02 w3-animate-opacity" src="images/shot0001.jpg" alt="Photo1" style="width:100%;max-width:640px" onload="setTimeout( hw02SlideShow, 1000 );">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0002.jpg" alt="Photo2" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0003.jpg" alt="Photo3" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0004.jpg" alt="Photo4" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0005.jpg" alt="Photo5" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0006.jpg" alt="Photo6" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0007.jpg" alt="Photo7" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0010.jpg" alt="Photo10" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0011.jpg" alt="Photo11" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0012.jpg" alt="Photo12" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0013.jpg" alt="Photo13" style="width:100%;max-width:640px;display:none">
+<img class="hwRev02 w3-animate-opacity" src="images/shot0014.jpg" alt="Photo14" style="width:100%;max-width:640px;display:none">
+      </div>
+
+    <div w3-include-html="bg_2_gallery.html"></div>
+    <div w3-include-html="background_1.html"></div>
+  </div>
       <div w3-include-html="video.html"></div>
     </div>
   </div>
