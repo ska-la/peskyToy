@@ -29,6 +29,7 @@
 <script>
 
 var curSlide = 0;
+var mI;
 
 function hw02SlideShow() {
   var i;
@@ -100,7 +101,7 @@ function showImg(i) {
 </div>
 
 <!--script>w3IncludeHTML(); setTimeout( hw02SlideShow, 1000 );</script-->
-<script>w3IncludeHTML(); var mI = setInterval( hw02SlideShow, 4000 );</script>
+<script>w3IncludeHTML();</script>
 
 <!------------------------- CONTENT MEDIUM ---------------------->
 
@@ -127,6 +128,8 @@ function showImg(i) {
 <script>
 
 w3IncludeHTML();
+
+mI = setInterval( hw02SlideShow, 4000 );
 
 function openRightNav() {
   document.getElementById("idRightNav").style.display = "block";
