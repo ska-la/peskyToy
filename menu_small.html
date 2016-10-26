@@ -1,14 +1,24 @@
 <!------------------------- MENU SMALL ---------------------->
 
-<nav id="idRightNav" class="w3-sidenav w3-top w3-padding-small w3-theme w3-xxlarge w3-center w3-card-2 w3-bordered" style="display:none;width:100%">
-  <a class="w3-border-bottom" href="#">GALLERY</a>
-  <a class="w3-border-bottom" href="#">VIDEO</a>
-  <a class="w3-border-bottom" href="https://github.com/ska-la/peskyToy/wiki/" target="_blank">DOCS<i class="fa fa-caret-right w3-padding"></i></a>
+<nav id="idRightNav" class="w3-sidenav w3-top w3-padding-0 w3-theme w3-xxlarge w3-center w3-card-2 w3-bordered" style="display:none;width:100%">
+  <div class="w3-accordion">
+    <div class="w3-btn-block w3-theme w3-border-bottom" onclick="">GALLERY</div>
+    <div class="w3-btn-block w3-theme w3-border-bottom" onclick="openMyAccord('idVideoSmall')">VIDEO</div>
+    <div id="idVideoSmall" class="w3-accordion-content">
+      <div class="w3-container w3-theme-d1 w3-padding-0">
+        <video width="320" height="240" controls>
+          <source src="video/vlc-test-11.ogv" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+  <a class="w3-border-bottom" href="https://github.com/ska-la/peskyToy/wiki/" target="_blank">DOCS<i class="fa fa-caret-right w3-padding-small"></i></a>
   <a class="w3-border-bottom w3-hover-red" href="http://www.fritzing.org" target="_blank">Fritzing<i class="fa fa-caret-right w3-padding-small"></i></a>
   <a class="w3-border-bottom w3-hover-green" href="http://www.pcbway.com" target="_blank">PcbWay<i class="fa fa-caret-right w3-padding-small"></i></a>
-  <a class="w3-border-bottom" href="https://github.com/search?o=desc&q=enc28j60+library&s=updated&type=Repositories&utf8=%E2%9C%93" target="_blank">SOFTWARE</a>
+  <a class="w3-border-bottom" href="https://github.com/search?o=desc&q=enc28j60+library&s=updated&type=Repositories&utf8=%E2%9C%93" target="_blank">SOFTWARE<i class="fa fa-caret-right w3-padding-small"></i></a>
   <a class="w3-border-bottom" onclick="document.getElementById('idModal1S').style.display = 'block'">CONTACT</a>
-  <a class="w3-border-bottom w3-black" onclick="closeRightNav()" href="#"><b>Close<span class="w3-padding-small">&times;</span></b></a>
+  <a class="w3-border-bottom w3-black" onclick="closeRightNav()"><b>Close<span class="w3-padding-small">&times;</span></b></a>
 </nav>
 
 <div class="w3-btn-bar w3-padding-small w3-xxlarge w3-theme-d2 w3-card-2">

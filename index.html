@@ -109,6 +109,7 @@ function showImg(i) {
 
 w3IncludeHTML();
 
+mI = setInterval( hw02SlideShow, 4000 );
 /*hw02SlideShow;*/
 
 function openRightNav() {
@@ -136,7 +137,15 @@ function switchTo(strMC) {
   document.getElementById(strMC).style.display = "block";
 }
 
-mI = setInterval( hw02SlideShow, 4000 );
+function openMyAccord(strAcc) {
+  var e = document.getElementById(strAcc);
+  if ( e.className.indexOf("w3-show") == -1 ) {
+    e.className += " w3-show";
+    document.getElementById("idVideoMedium").style.display = "block";
+  } else
+    e.className = e.className.replace(" w3-show", "");
+    document.getElementById("idVideoMedium").style.display = "none";
+}
 
 </script>
 
