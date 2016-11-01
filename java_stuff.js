@@ -13,14 +13,15 @@ function hw02SlideShow() {
   var es_s = document.getElementsByClassName("hwRev02s");
   var bgs = document.getElementsByClassName("idBadges");
   var bgs_m = document.getElementsByClassName("idM_Badges");
-  for ( i = 0; i < es.length; i++ ) {
+  var es_l = es.length;
+  for ( i = 0; i < es_l; i++ ) {
     es[i].style.display = "none";
     es_m[i].style.display = "none";
     es_s[i].style.display = "none";
     bgs[i].className = bgs[i].className.replace(" w3-white"," w3-grey");
     bgs_m[i].className = bgs_m[i].className.replace(" w3-white","");
   }
-  if ( curSlide === es.length ) { curSlide = 0; }
+  if ( curSlide === es_l ) { curSlide = 0; }
   es[curSlide].style.display = "block";
   es_m[curSlide].style.display = "block";
   es_s[curSlide].style.display = "block";
@@ -45,7 +46,8 @@ function closeRightNav() {
 function switchToMedium(strMC) {
   var i;
   var es = document.getElementsByClassName("myContMedium");
-  for ( i = 0; i < es.length; i++ ) {
+  var es_l = es.length;
+  for ( i = 0; i < es_l; i++ ) {
     es[i].style.display = "none";
   }
   document.getElementById(strMC).style.display = "block";
