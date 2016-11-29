@@ -13,7 +13,7 @@ with the single board
 
 which is deprived of some hardware drawbacks.
 
-All details you can see on [Wiki] (../../wiki)
+All details you can see on [Wiki] (../../wiki) or [Pages] (http://ska-la.github.io/peskyToy)
 
 WARNING! IC1 of hw rev.02 must be fixed.
 
